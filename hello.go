@@ -315,5 +315,5 @@ func main() {
 	fmt.Scanf("%f", &ftemp)
 	ctemp = (ftemp * 1.8) + 32
 	fmt.Printf("The temperature in farenheit : %.2f", ctemp)
-
+    fmt.Print("hi its ketan")
 }
