@@ -5,6 +5,7 @@ package main
 import (
 	"fmt"
 	"io"
+	"math"
 	"os"
 )
 
@@ -330,4 +331,13 @@ func main() {
 	// fmt.Scan(&str, &dd, &flt)
 	// fmt.Printf("\nResult:%s,%d\n", str, dd)
 
+	//Why type casting is important??
+	var a int = 123
+	var b uint = 0
+	b = uint(a) //type cast nahi kiya tho error
+	c := float64(-10.00)
+	fmt.Printf("\t%g", math.Abs(c))
+	fmt.Printf("\t%g", math.Sqrt(math.Abs(c)))
+	//assign value to b of a
+	fmt.Printf("\na=%d,b=%d\n", a, b)
 }
