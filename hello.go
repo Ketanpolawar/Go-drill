@@ -322,12 +322,12 @@ func main() {
 	var mm int = 02
 	var yy int = 2024
 	var str string
-	var flt float32 = 90.78
+	// var flt float32 = 90.78
 	str = fmt.Sprintf("%02d-%02d-%04d", dd, mm, yy)
 	io.WriteString(os.Stdout, str)
 
-	fmt.Printf("\nenter the string:")
-	fmt.Scan(&str, &dd, &flt)
-	fmt.Printf("\nResult:%s,%d,%g\n", str, dd, flt)
+	// fmt.Printf("\nenter the string:")
+	// fmt.Scan(&str, &dd, &flt)
+	// fmt.Printf("\nResult:%s,%d\n", str, dd)
 
 }
