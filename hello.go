@@ -4,6 +4,8 @@ package main
 
 import (
 	"fmt"
+	"io"
+	"os"
 )
 
 const (
@@ -309,11 +311,22 @@ func main() {
 	// area = PI * a
 	// println(area)
 
-	var ftemp float64
-	var ctemp float64
-	fmt.Print("Enter the temperatur in celcius:")
-	fmt.Scanf("%f", &ftemp)
-	ctemp = (ftemp * 1.8) + 32
-	fmt.Printf("The temperature in farenheit : %.2f", ctemp)
-    fmt.Print("hi its ketan")
+	// var ftemp float64
+	// var ctemp float64
+	// fmt.Print("Enter the temperatur in celcius:")
+	// fmt.Scanf("%f", &ftemp)
+	// ctemp = (ftemp * 1.8) + 32
+	// fmt.Printf("The temperature in farenheit : %.2f", ctemp)
+	// fmt.Print("hi its ketan")
+	var dd int = 20
+	var mm int = 02
+	var yy int = 2024
+	var str string
+	str = fmt.Sprintf("%02d-%02d-%04d", dd, mm, yy)
+	io.WriteString(os.Stdout, str)
+
+	fmt.Printf("\nenter the string:")
+	fmt.Scan(&str)
+	fmt.Printf("\nResult:%s\n", str)
+
 }
