@@ -2,6 +2,8 @@
 // var a int =10 ; static varable declaration
 package main
 
+import "fmt"
+
 const (
 	C  = "ketan"
 	PI = 3.14
@@ -391,5 +393,18 @@ func main() {
 	// }
 	// println("Name:", name)
 	// println("Age:", age)
+
+	var a, b, c int
+	println("Enter the values of a,b,c")
+	fmt.Scan(&a, &b, &c)
+	if (a > b) && (a > c) {
+		println("The Largerst value is :", a)
+	}
+	if (b > a) && (b > c) {
+		println("The Largerst value is :", b)
+	}
+	if (c > b) && (c > a) {
+		println("The Largerst value is :", c)
+	}
 
 }
