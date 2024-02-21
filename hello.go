@@ -2,7 +2,9 @@
 // var a int =10 ; static varable declaration
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 const (
 	C  = "ketan"
@@ -394,17 +396,55 @@ func main() {
 	// println("Name:", name)
 	// println("Age:", age)
 
-	var a, b, c int
-	println("Enter the values of a,b,c")
-	fmt.Scan(&a, &b, &c)
-	if (a > b) && (a > c) {
-		println("The Largerst value is :", a)
-	}
-	if (b > a) && (b > c) {
-		println("The Largerst value is :", b)
-	}
-	if (c > b) && (c > a) {
-		println("The Largerst value is :", c)
-	}
+	// var a, b, c int
+	// println("Enter the values of a,b,c")
+	// fmt.Scanln(&a, &b, &c) //eak line mai hi inputs likho
+	// // fmt.Scanln(&a)//harr statement enter k badd input fmt.Scanln(&a,&b) dono eak line mai likh sakte
+	// // fmt.Scanln(&b)
+	// // fmt.Scanln(&c)
+	// if (a > b) && (a > c) {
+	// 	println("The Largerst value is :", a)
+	// }
+	// if (b > a) && (b > c) {
+	// 	println("The Largerst value is :", b)
+	// }
+	// if (c > b) && (c > a) {
+	// 	println("The Largerst value is :", c)
+	// }
+	/*if condn {
+
+	}else{ //else must be written in same line of ending } of if
+
+	}*/
+
+	// a := 20
+	// b := 10
+
+	// if a > b {
+	// 	println("a is greater than b")
+	// } else {
+	// 	println("b is greater the a")
+	// }
+
+	// var a int
+	// println("enter the number")
+	// fmt.Scan(&a)
+	// // if a%2 == 0 {
+	// // 	println("It is even number")
+	// // } else {
+	// // 	println("it is odd number")
+	// // }
+
+	// if a < 0 {
+	// 	a = -1 * a
+	// 	fmt.Printf("Abs value of a is: %d", a)
+	// } else {
+	// 	println("the value of a is ", a)
+	// }
+
+	/*func functionname (argument list){
+
+	}*/
+    
 
 }
