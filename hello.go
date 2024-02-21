@@ -2,10 +2,6 @@
 // var a int =10 ; static varable declaration
 package main
 
-import (
-	"fmt"
-)
-
 const (
 	C  = "ketan"
 	PI = 3.14
@@ -379,7 +375,21 @@ func main() {
 	// if b := 10; a > b { //b would be block variable ,only one ststement kar sakte a,b=10,20 works
 	// 	fmt.Println("a is less than b")
 	// }
+	//var age int
+	//var name string
+	// print("enter the values")
+	// if _, err := fmt.Scan(&name, &age); err != nil {
+	// 	fmt.Println(err)
+	// 	os.Exit(1)
+	// }
+	// println("Name:", name)
+	// println("Age:", age)
 
-    
+	// print("enter the values")
+	// if a, err := fmt.Scan(&name, &age); err == nil {//fmt.scan jo value return karta hai voh return karata hai hum determine nahi kar sakta hai
+	// 	fmt.Println("Hey", a)
+	// }
+	// println("Name:", name)
+	// println("Age:", age)
 
 }
