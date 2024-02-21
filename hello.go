@@ -349,13 +349,37 @@ func main() {
 	// fmt.Printf("\nValue of x is %d and type is %T\n", x, x)
 	// fmt.Printf("\nValue of y is %2f and type is %T\n", y, y)
 	// fmt.Printf("\nvalue of z is %d and type is %T\n", z, z)
-	var num1 int
-	var num2 int
-	var avg float64
-	num1 = 10
-	num2 = 5
-	avg = (float64(num1) + float64(num2)) / 2
-	//avg = (num1+num2) / 2 will give error as int cant be stored in float
-	fmt.Printf("Average of %d and %d is %.2f\n", num1, num2, avg)
+	// var num1 int
+	// var num2 int
+	// var avg float64
+	// num1 = 10
+	// num2 = 5
+	// avg = (float64(num1) + float64(num2)) / 2
+	// //avg = (num1+num2) / 2 will give error as int cant be stored in float
+	// fmt.Printf("Average of %d and %d is %.2f\n", num1, num2, avg)
+
+	//****Selection Iterations Sequencing ****
+	/*if condition/expression {
+		code to be executed
+	}*/
+
+	//a := 20
+	// b := 10
+
+	// if !(a > b) {
+	// 	fmt.Println("Hi its ketan 1")
+	// }
+	// if 20 > 10 {
+	// 	fmt.Println("Hi its ketan 2")
+	// }
+	// if true {
+	// 	fmt.Println("Hi its ketan 3")
+	// }
+
+	// if b := 10; a > b { //b would be block variable ,only one ststement kar sakte a,b=10,20 works
+	// 	fmt.Println("a is less than b")
+	// }
+
+    
 
 }
