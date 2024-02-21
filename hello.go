@@ -212,38 +212,38 @@ func main() {
 	// fmt.Printf("%x\n", txt)
 	// fmt.Printf("% x\n", txt)
 
-	// var (
-	// 	marks1     int
-	// 	marks2     int
-	// 	marks3     int
-	// 	roll       int
-	// 	percentage int
-	// 	sum        int
-	// 	name       string
-	// 	branch     string
-	// )
+	var (
+		marks1     int
+		marks2     int
+		marks3     int
+		roll       int
+		percentage int
+		sum        int
+		name       string
+		branch     string
+	)
 
-	// fmt.Printf("\n**Please Enter The Details**\n")
-	// fmt.Println("**Please Enter Your Name**")
-	// fmt.Scanf("%s", &name)
-	// fmt.Println("**Please Enter Your Branch**")
-	// fmt.Scanf("%s", &branch)
-	// fmt.Println("**Please Enter Your Id**")
-	// fmt.Scanf("%s", &roll)
-	// fmt.Println("**Please Enter Your Marks1**")
-	// fmt.Scanf("%s", &marks1)
-	// fmt.Println("**Please Enter Your Marks2**")
-	// fmt.Scanf("%s", &marks2)
-	// fmt.Println("**Please Enter Your Marks3**")
-	// fmt.Scanf("%s", &marks3)
-
-	// sum = marks1 + marks2 + marks3
-	// percentage = (sum / 300.0) * 100
-
-	// println("SHRI RAMDEOBABA COLLEGE OF ENGINEERING AND MANAGEMENT")
-	// fmt.Printf("\nName : %s\tId:'%d'\n", name, roll)
-	// fmt.Printf("Branch:'%s'\tsum:'%d'\n", branch, sum)
-	// fmt.Printf("Percentage:'%d'", percentage)
+	fmt.Printf("\n**Please Enter The Details**\n")
+	fmt.Println("**Please Enter Your Name,Branch,Id**")
+	fmt.Scan(&name, &branch, &roll)
+	fmt.Println("**Please Enter Your marks1 marks2 marks 3**")
+	fmt.Scan(&marks1, &marks2, &marks3)
+	sum = marks1 + marks2 + marks3
+	percentage = (sum * 100) / 300
+	print("\n\n")
+	println("**SHRI RAMDEOBABA COLLEGE OF ENGINEERING AND MANAGEMENT**")
+	print("                Student Grade Card")
+	fmt.Printf("\nName : %s\tId:'%d'\n", name, roll)
+	fmt.Printf("Branch:'%s'\tscore:'%d/300'\n", branch, sum)
+	println("DBMS:", marks1)
+	println("OS:", marks2)
+	println("DHLV:", marks3)
+	fmt.Printf("Percentage:%d%%", percentage)
+	if percentage > 40 {
+		print("\nCongulations You Have Passed the Exam !!")
+	} else {
+		print("\nYou have Failed ,Better Luck Next Time :) ")
+	}
 
 	// integer := 23
 	// fmt.Printf("%T %T\n", integer, &integer)
@@ -445,6 +445,5 @@ func main() {
 	/*func functionname (argument list){
 
 	}*/
-    
 
 }
