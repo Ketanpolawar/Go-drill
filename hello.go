@@ -4,8 +4,6 @@ package main
 
 import (
 	"fmt"
-	"io"
-	"os"
 )
 
 const (
@@ -318,13 +316,13 @@ func main() {
 	// ctemp = (ftemp * 1.8) + 32
 	// fmt.Printf("The temperature in farenheit : %.2f", ctemp)
 	// fmt.Print("hi its ketan")
-	var dd int = 20
-	var mm int = 02
-	var yy int = 2024
-	var str string
+	// var dd int = 20
+	// var mm int = 02
+	// var yy int = 2024
+	// var str string
 	// var flt float32 = 90.78
-	str = fmt.Sprintf("%02d-%02d-%04d", dd, mm, yy)
-	io.WriteString(os.Stdout, str)
+	// str = fmt.Sprintf("%02d-%02d-%04d", dd, mm, yy)
+	// io.WriteString(os.Stdout, str)
 
 	// fmt.Printf("\nenter the string:")
 	// fmt.Scan(&str, &dd, &flt)
@@ -345,11 +343,19 @@ func main() {
 	// r = float32(math.Sqrt(float64(x)))
 	// print(r)
 
-	var x int = 42
-	var y float64 = float64(x)
-	var z uint = uint(y)
-	fmt.Printf("\nValue of x is %d and type is %T\n", x, x)
-	fmt.Printf("\nValue of y is %2f and type is %T\n", y, y)
-	fmt.Printf("\nvalue of z is %d and type is %T\n", z, z)
+	// var x int = 42
+	// var y float64 = float64(x)
+	// var z uint = uint(y)
+	// fmt.Printf("\nValue of x is %d and type is %T\n", x, x)
+	// fmt.Printf("\nValue of y is %2f and type is %T\n", y, y)
+	// fmt.Printf("\nvalue of z is %d and type is %T\n", z, z)
+	var num1 int
+	var num2 int
+	var avg float64
+	num1 = 10
+	num2 = 5
+	avg = (float64(num1) + float64(num2)) / 2
+	//avg = (num1+num2) / 2 will give error as int cant be stored in float
+	fmt.Printf("Average of %d and %d is %.2f\n", num1, num2, avg)
 
 }
