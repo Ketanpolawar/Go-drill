@@ -2,9 +2,7 @@
 // var a int =10 ; static varable declaration
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 const (
 	C  = "ketan"
@@ -211,40 +209,40 @@ func main() {
 	// fmt.Printf("%-8s\n", txt)
 	// fmt.Printf("%x\n", txt)
 	// fmt.Printf("% x\n", txt)
+	//**************************************************//
+	// var (
+	// 	marks1     int
+	// 	marks2     int
+	// 	marks3     int
+	// 	roll       int
+	// 	percentage int
+	// 	sum        int
+	// 	name       string
+	// 	branch     string
+	// )
 
-	var (
-		marks1     int
-		marks2     int
-		marks3     int
-		roll       int
-		percentage int
-		sum        int
-		name       string
-		branch     string
-	)
-
-	fmt.Printf("\n**Please Enter The Details**\n")
-	fmt.Println("**Please Enter Your Name,Branch,Id**")
-	fmt.Scan(&name, &branch, &roll)
-	fmt.Println("**Please Enter Your marks1 marks2 marks 3**")
-	fmt.Scan(&marks1, &marks2, &marks3)
-	sum = marks1 + marks2 + marks3
-	percentage = (sum * 100) / 300
-	print("\n\n")
-	println("**SHRI RAMDEOBABA COLLEGE OF ENGINEERING AND MANAGEMENT**")
-	print("                Student Grade Card")
-	fmt.Printf("\nName : %s\tId:'%d'\n", name, roll)
-	fmt.Printf("Branch:'%s'\tscore:'%d/300'\n", branch, sum)
-	println("DBMS:", marks1)
-	println("OS:", marks2)
-	println("DHLV:", marks3)
-	fmt.Printf("Percentage:%d%%", percentage)
-	if percentage > 40 {
-		print("\nCongulations You Have Passed the Exam !!")
-	} else {
-		print("\nYou have Failed ,Better Luck Next Time :) ")
-	}
-
+	// fmt.Printf("\n**Please Enter The Details**\n")
+	// fmt.Println("**Please Enter Your Name,Branch,Id**")
+	// fmt.Scan(&name, &branch, &roll)
+	// fmt.Println("**Please Enter Your marks1 marks2 marks 3**")
+	// fmt.Scan(&marks1, &marks2, &marks3)
+	// sum = marks1 + marks2 + marks3
+	// percentage = (sum * 100) / 300
+	// print("\n\n")
+	// println("**SHRI RAMDEOBABA COLLEGE OF ENGINEERING AND MANAGEMENT**")
+	// print("                Student Grade Card")
+	// fmt.Printf("\nName : %s\tId:'%d'\n", name, roll)
+	// fmt.Printf("Branch:'%s'\tscore:'%d/300'\n", branch, sum)
+	// println("DBMS:", marks1)
+	// println("OS:", marks2)
+	// println("DHLV:", marks3)
+	// fmt.Printf("Percentage:%d%%", percentage)
+	// if percentage > 40 {
+	// 	print("\nCongulations You Have Passed the Exam !!")
+	// } else {
+	// 	print("\nYou have Failed ,Better Luck Next Time :) ")
+	// }
+	//**************************************************************//
 	// integer := 23
 	// fmt.Printf("%T %T\n", integer, &integer)
 	// fmt.Print(integer, &integer)
@@ -445,5 +443,87 @@ func main() {
 	/*func functionname (argument list){
 
 	}*/
+
+	//22-02-2024//
+	//******************Functions************************//
+
+	/*func functionName(){
+
+	}*/
+	var x int
+	var y int
+	//var sum int
+	print("/nEnter the numbaers:")
+	fmt.Scan(&x, &y)
+	// greet()
+	// addition()
+	// addition1(x, y)
+	// z := addition2(x, y)
+	// print("\nreturned sum :", z)
+	// sum, difference := calculate(x, y)
+	// fmt.Printf("\nreturned sum is %d difference is %d:", sum, difference)
+	// s := square(x)
+	// fmt.Printf("\nreturned sum is :%d ", s)
+	// sum2()
+	// fmt.Printf("Sum is:", sum)
+	countdown(x)
+
+}
+
+func greet() {
+	print("Hello World!! kasa kay :)")
+}
+
+func addition() {
+	n1 := 10
+	n2 := 20
+	sum := n1 + n2
+	print("\nsum is :", sum)
+}
+
+func addition1(n1 int, n2 int) {
+	sum := n1 + n2
+	print("\nsum is :", sum)
+
+}
+
+func addition2(n1 int, n2 int) int { //return type bhi likho
+	sum := n1 + n2
+	return (sum)
+	//print("hi")
+
+}
+
+func calculate(n1 int, n2 int) (int, int) {
+	sum := n1 + n2
+	difference := n2 - n1
+	return sum, difference
+}
+
+func square(n1 int) int {
+	s := n1 * n1
+	return s
+
+}
+
+func sum2() {
+	var sum int
+	sum = 5 + 9
+	print(sum)
+}
+
+//******************** Recursion *********************
+
+/*func recurse(){
+	---
+	---
+	recurse()
+}*/
+
+func countdown(n1 int) {
+	fmt.Println(n1)
+	if n1 > 1 {
+		countdown(n1 - 1)
+	}
 
 }
