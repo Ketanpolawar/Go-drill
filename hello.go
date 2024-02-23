@@ -450,11 +450,11 @@ func main() {
 	/*func functionName(){
 
 	}*/
-	var x int
-	var y int
+	// var x int
+	// var y int
 	//var sum int
-	print("/nEnter the numbaers:")
-	fmt.Scan(&x, &y)
+	// print("/nEnter the numbaers:")
+	// fmt.Scan(&x, &y)
 	// greet()
 	// addition()
 	// addition1(x, y)
@@ -466,7 +466,10 @@ func main() {
 	// fmt.Printf("\nreturned sum is :%d ", s)
 	// sum2()
 	// fmt.Printf("Sum is:", sum)
-	countdown(x)
+	//countdown(x)
+	fmt.Println(factorial(3))
+	fmt.Println(factorial(4))
+	fmt.Println(factorial(5))
 
 }
 
@@ -520,10 +523,17 @@ func sum2() {
 	recurse()
 }*/
 
-func countdown(n1 int) {
-	fmt.Println(n1)
-	if n1 > 1 {
-		countdown(n1 - 1)
-	}
+// func countdown(n1 int) {
+// 	fmt.Println(n1)
+// 	if n1 > 1 {
+// 		countdown(n1 - 1)
+// 	}
 
+// }
+
+func factorial(num int) int {
+	if num == 1 || num == 0 {
+		return num
+	}
+	return num * factorial(num-1)
 }
