@@ -2,6 +2,8 @@
 // var a int =10 ; static varable declaration
 package main
 
+import "fmt"
+
 const (
 	C  = "ketan"
 	PI = 3.14
@@ -448,11 +450,11 @@ func main() {
 	/*func functionName(){
 
 	}*/
-	// var x int
+	var x int
 	// var y int
 	//var sum int
-	// print("/nEnter the numbaers:")
-	// fmt.Scan(&x, &y)
+	print("/nEnter the numbaers:")
+	fmt.Scan(&x)
 	// greet()
 	// addition()
 	// addition1(x, y)
@@ -468,7 +470,7 @@ func main() {
 	// fmt.Println(factorial(3))
 	// fmt.Println(factorial(4))
 	// fmt.Println(factorial(5))
-	fmt.print("the sum is :", sum(20))
+	fmt.Print("the sum is :", sum(x))
 
 }
 
