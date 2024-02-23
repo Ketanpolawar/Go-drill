@@ -483,6 +483,10 @@ func main() {
 
 	var result = sum3(x, y)
 	fmt.Println("resulted Sum is:", result)
+///Function having Function as argument
+	expected:=square(sum3(x,y))
+	fmt.Println("resulted Sum is:",expected)
+
 }
 
 func greet1() {
