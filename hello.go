@@ -483,9 +483,9 @@ func main() {
 
 	var result = sum3(x, y)
 	fmt.Println("resulted Sum is:", result)
-///Function having Function as argument
-	expected:=square(sum3(x,y))
-	fmt.Println("resulted Sum is:",expected)
+	///Function having Function as argument
+	expected := square(sum3(x, y))
+	fmt.Println("resulted Sum is:", expected)
 
 }
 
@@ -578,3 +578,5 @@ var sum3 = func(n1, n2 int) int {
 	result := n1 + n2
 	return result
 }
+
+//kpi bhi function function mai define nahi kar sakte ,but ananymous functions can be defined
