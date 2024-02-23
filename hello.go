@@ -2,8 +2,6 @@
 // var a int =10 ; static varable declaration
 package main
 
-import "fmt"
-
 const (
 	C  = "ketan"
 	PI = 3.14
@@ -467,9 +465,10 @@ func main() {
 	// sum2()
 	// fmt.Printf("Sum is:", sum)
 	//countdown(x)
-	fmt.Println(factorial(3))
-	fmt.Println(factorial(4))
-	fmt.Println(factorial(5))
+	// fmt.Println(factorial(3))
+	// fmt.Println(factorial(4))
+	// fmt.Println(factorial(5))
+	fmt.print("the sum is :", sum(20))
 
 }
 
@@ -531,9 +530,17 @@ func sum2() {
 
 // }
 
-func factorial(num int) int {
-	if num == 1 || num == 0 {
-		return num
+// func factorial(num int) int {
+// 	if num == 1 || num == 0 {
+// 		return num
+// 	}
+// 	return num * factorial(num-1)
+// }
+
+func sum(number int) int {
+	if number == 0 {
+		return 0
+	} else {
+		return number + sum(number-1)
 	}
-	return num * factorial(num-1)
 }
