@@ -540,7 +540,7 @@ func sum2() {
 // }
 
 func sum(number int) int {
-	if number == 0 {
+	if number <= 0 {
 		return 0
 	} else {
 		return number + sum(number-1)
