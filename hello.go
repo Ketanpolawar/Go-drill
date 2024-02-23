@@ -451,13 +451,13 @@ func main() {
 
 	}*/
 	var x int
-	// var y int
+	var y int
 	//var sum int
 	print("/nEnter the numbaers:")
-	fmt.Scan(&x)
+	fmt.Scan(&x, &y)
 	// greet()
 	// addition()
-	// addition1(x, y)
+	// addition1(x, y)S
 	// z := addition2(x, y)
 	// print("\nreturned sum :", z)
 	// sum, difference := calculate(x, y)
@@ -470,11 +470,22 @@ func main() {
 	// fmt.Println(factorial(3))
 	// fmt.Println(factorial(4))
 	// fmt.Println(factorial(5))
-	fmt.Print("the sum is :", sum(x))
+	if x < 0 {
+		print("enter valid input,Try again with vaild input >0")
+	} else {
+		fmt.Print("the sum is :", sum(x))
+	}
 
+	welcome := greet
+	welcome()
+	sum1(x, y)
+	fmt.Printf("%T", sum1)
+
+	var result = sum3(x, y)
+	fmt.Println("resulted Sum is:", result)
 }
 
-func greet() {
+func greet1() {
 	print("Hello World!! kasa kay :)")
 }
 
@@ -540,9 +551,26 @@ func sum2() {
 // }
 
 func sum(number int) int {
-	if number <= 0 {
+	if number == 0 {
 		return 0
 	} else {
 		return number + sum(number-1)
 	}
+}
+
+/*func(){
+
+}*/
+
+var greet = func() {
+	fmt.Println("\nHello,how are you")
+}
+var sum1 = func(n1, n2 int) {
+	result := n1 + n2
+	fmt.Println("Sum is:", result)
+}
+
+var sum3 = func(n1, n2 int) int {
+	result := n1 + n2
+	return result
 }
