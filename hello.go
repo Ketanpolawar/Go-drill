@@ -641,22 +641,62 @@
 // 	fmt.Println(messages())
 
 // }
+// package main
+
+// import "fmt"
+
+// func displayNumbers() func() int {
+// 	number := 0
+// 	return func() int {
+// 		number++
+// 		return number
+// 	}
+// }
+// func main() {
+// 	num1 := displayNumbers()
+// 	fmt.Println(num1())
+// 	num2 := displayNumbers()
+// 	fmt.Println(num2())
+// 	num3 := displayNumbers()
+// 	fmt.Println(num3())
+
+// package main
+
+// import "fmt"
+
+// func displayNumbers() func() int {
+// 	number := 0
+// 	return func() int {
+// 		number++
+// 		return number
+// 	}
+// }
+// func main() {
+// 	num1 := displayNumbers()
+// 	fmt.Println(num1())
+// 	num2 := displayNumbers()
+// 	fmt.Println(num2())
+// 	fmt.Println(displayNumbers()())
+// 	num3 := displayNumbers()
+// 	fmt.Println(displayNumbers())
+// 	fmt.Println(num3())
+
+// }
+
+//*********febo using recursion and ananymous***********
+
 package main
 
 import "fmt"
 
-func displayNumbers() func() int {
-	number := 0
-	return func() int {
-		number++
-		return number
-	}
-}
 func main() {
-	num1 := displayNumbers()
-	fmt.Println(num1())
-	num2 := displayNumbers()
-	fmt.Println(num2())
-	num3 := displayNumbers()
-	fmt.Println(num3())
+
+	var fib func(n int) int
+	fib = func(n int) int {
+		if n < 2 {
+			return n
+		}
+		return fib(n-1) + fib(n-2)
+	}
+	fmt.Println(fib(7))
 }
