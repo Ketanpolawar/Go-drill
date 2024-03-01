@@ -685,18 +685,18 @@
 
 //*********febo using recursion and ananymous***********
 
-package main
+// package main
 
-import "fmt"
+// import "fmt"
 
-func main() {
+// func main() {
 
-	var fib func(n int) int
-	fib = func(n int) int {
-		if n < 2 {
-			return n
-		}
-		return fib(n-1) + fib(n-2)
-	}
-	fmt.Println(fib(7))
-}
+// 	var fib func(n int) int
+// 	fib = func(n int) int {
+// 		if n < 2 {
+// 			return n
+// 		}
+// 		return fib(n-1) + fib(n-2)
+// 	}
+// 	fmt.Println(fib(7))
+// }
