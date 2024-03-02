@@ -757,6 +757,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 // func main() {
@@ -801,13 +802,25 @@ import (
 // 	}
 
 // }
+//
+//	func main() {
+//		i := 0
+//
+// loop:
+//
+//		fmt.Println(i)
+//		i++
+//		if i < 5 {
+//			goto loop
+//		}
+//		println("ends the loop")
+//	}
 func main() {
-	i := 0
-loop:
-	fmt.Println(i)
-	i++
-	if i < 5 {
-		goto loop
+	var str string = "Hello World"
+	var substr string = "Wor"
+	if strings.Contains(str, substr) == true {
+		fmt.Printf("String (%s) contains substring (%s)", str, substr)
+	} else {
+		fmt.Printf("String (%s) do not contain substring (%s)", str, substr)
 	}
-	println("ends the loop")
 }
