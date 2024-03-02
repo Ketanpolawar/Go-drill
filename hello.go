@@ -761,8 +761,8 @@ import (
 )
 
 func main() {
-	M := time.Now() //get system date/month/year
-	Month := M.Month()//corp the Month from the date returned
+	M := time.Now()    //get system date/month/year
+	Month := M.Month() //corp the Month from the date returned
 	fmt.Printf("%T\n", M)
 	switch Month {
 	case 1:
@@ -773,6 +773,17 @@ func main() {
 		println("March", "April")
 	case 5:
 		println("May")
+	}
+
+	switch Month {
+	case 1, 3, 5, 7, 8, 10:
+		fmt.Println("31 days")
+		fallthrough //goes to next case ,and direcly runs the next case without even verifing the nect case
+	case 4, 6, 9, 11:
+		fmt.Println("30 days")
+	default:
+		fmt.Println("this")
+
 	}
 
 }
