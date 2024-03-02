@@ -701,22 +701,56 @@
 // 	fmt.Println(fib(7))
 // }
 
-// ***********************************************2-03-24************************************************
+// ***********************************************02-03-24************************************************
+// Nested if else block
 package main
 
 import "fmt"
 
+// func main() {
+// 	var year int
+// 	println("enter the value for year:")
+// 	fmt.Scanln(&year)
+// 	if (year%4 == 0 && year%100 != 0) || (year%4 == 0 && year%100 == 0 && year%400 == 0) {
+// 		if year == 0 {
+// 			println("invalid year")
+// 		} else {
+// 			println(year, " is a leap year")
+// 		}
+// 	} else {
+// 		println(year, " is not a leap year")
+// 	}
+// }
+
+// func main() {
+// 	x := 8
+// 	y := 10
+
+// 	if x != y {
+// 		if x < y {
+// 			println(x, "is less than", y)
+// 		} else if x > y {
+// 			println(x, "is more than", y)
+// 		} else {
+// 			println(x, " is equal to ", y)
+// 		}
+
+// 	}
+// }
+
 func main() {
-	var year int
-	println("enter the value for year:")
-	fmt.Scanln(&year)
-	if (year%4 == 0 && year%100 != 0) || (year%4 == 0 && year%100 == 0 && year%400 == 0) {
-		if year == 0 {
-			println("invalid year")
+	var time int
+	println("Enter the time:")
+	fmt.Scanln(&time)
+	if 0 < time && time < 24 && time != 0 {
+		if time < 10 {
+			println("good moring")
+		} else if time > 10 && time <= 20 {
+			println("good day")
 		} else {
-			println(year, " is a leap year")
+			println("good evening")
 		}
-	} else {
-		println(year, " is not a leap year")
+
 	}
+
 }
