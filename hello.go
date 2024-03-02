@@ -705,8 +705,6 @@
 // Nested if else block
 package main
 
-import "fmt"
-
 // func main() {
 // 	var year int
 // 	println("enter the value for year:")
@@ -738,19 +736,43 @@ import "fmt"
 // 	}
 // }
 
-func main() {
-	var time int
-	println("Enter the time:")
-	fmt.Scanln(&time)
-	if 0 < time && time < 24 && time != 0 {
-		if time < 10 {
-			println("good moring")
-		} else if time > 10 && time <= 20 {
-			println("good day")
-		} else {
-			println("good evening")
-		}
+// func main() {
+// 	var time int
+// 	println("Enter the time:")
+// 	fmt.Scanln(&time)
+// 	if 0 < time && time < 24 && time != 0 {
+// 		if time < 10 {
+// 			println("good moring")
+// 		} else if time > 10 && time <= 20 {
+// 			println("good day")
+// 		} else {
+// 			println("good evening")
+// 		}
 
+// 	}
+
+// }
+
+//**************************************************Switch Statements****************************************************
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	M := time.Now() //get system date/month/year
+	Month := M.Month()//corp the Month from the date returned
+	fmt.Printf("%T\n", M)
+	switch Month {
+	case 1:
+		println("January")
+	case 2:
+		println("Febrary")
+	case 3, 4:
+		println("March", "April")
+	case 5:
+		println("May")
 	}
 
 }
