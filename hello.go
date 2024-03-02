@@ -818,9 +818,12 @@ import (
 func main() {
 	var str string = "Hello World"
 	var substr string = "Wor"
-	if strings.Contains(str, substr) == true {
-		fmt.Printf("String (%s) contains substring (%s)", str, substr)
+	if strings.Contains(str, substr) {//checks the contains
+		fmt.Printf("String (%s) contains substring (%s)\n", str, substr)
 	} else {
-		fmt.Printf("String (%s) do not contain substring (%s)", str, substr)
+		fmt.Printf("String (%s) do not contain substring (%s)\n", str, substr)
 	}
+	println(strings.ToUpper(str))//to upper
+	println(strings.ToLower(str))//to lower
+	println(strings.Index(str,"W"))//position of the "W" in str
 }
