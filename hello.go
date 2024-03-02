@@ -818,12 +818,16 @@ import (
 func main() {
 	var str string = "Hello World"
 	var substr string = "Wor"
-	if strings.Contains(str, substr) {//checks the contains
+	if strings.Contains(str, substr) { //checks the contains of substr in str
 		fmt.Printf("String (%s) contains substring (%s)\n", str, substr)
 	} else {
 		fmt.Printf("String (%s) do not contain substring (%s)\n", str, substr)
 	}
-	println(strings.ToUpper(str))//to upper
-	println(strings.ToLower(str))//to lower
-	println(strings.Index(str,"W"))//position of the "W" in str
+	println(strings.ToUpper(str)) //to upper
+	println(strings.ToLower(str)) //to lower
+	if (strings.Index(str, "W")) < 0 {
+		println("does not exists")
+	} else {
+		println("exists st the position", (strings.Index(str, "W")))
+	} //position of the "W" in str
 }
