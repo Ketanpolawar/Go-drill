@@ -786,4 +786,19 @@ func main() {
 
 	}
 
+	//var x interface{} = "RKNEC"
+	var x interface{}
+	switch i := x.(type) {
+	case nil:
+		fmt.Printf("type of x is %T", i)
+	case int:
+		fmt.Printf("type of x is int")
+	case float32:
+		fmt.Printf("type of x is float32")
+	case bool, string:
+		fmt.Print("Type of x is string or bool")
+	default:
+		fmt.Print("dont know the type")
+	}
+
 }
