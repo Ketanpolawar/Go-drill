@@ -700,3 +700,23 @@
 // 	}
 // 	fmt.Println(fib(7))
 // }
+
+// ***********************************************2-03-24************************************************
+package main
+
+import "fmt"
+
+func main() {
+	var year int
+	println("enter the value for year:")
+	fmt.Scanln(&year)
+	if (year%4 == 0 && year%100 != 0) || (year%4 == 0 && year%100 == 0 && year%400 == 0) {
+		if year == 0 {
+			println("invalid year")
+		} else {
+			println(year, " is a leap year")
+		}
+	} else {
+		println(year, " is not a leap year")
+	}
+}
