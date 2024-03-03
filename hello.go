@@ -705,8 +705,6 @@
 // Nested if else block
 package main
 
-import "fmt"
-
 // func main() {
 // 	var year int
 // 	println("enter the value for year:")
