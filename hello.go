@@ -927,15 +927,28 @@ import "fmt"
 
 // }
 
+// func main() {
+// 	num := 1
+// 	var a int
+// 	print("Enter the number")
+// 	fmt.Scanln(&a)
+// 	for num <= 10 {
+// 		product := 5 * num
+// 		fmt.Println(product)
+// 		num++
+// 	}
+
+// }
+
+//slicce in GO langauge
+
 func main() {
-	num := 1
-	var a int
-	print("Enter the number")
-	fmt.Scanln(&a)
-	for num <= 10 {
-		product := 5 * num
-		fmt.Println(product)
-		num++
+	colors := []string{"Red", "Blue", "Green"}
+	for index, val := range colors { //range always returns 2 values index and value as showm
+		fmt.Println(index, ":-", val)
 	}
 
+	for _, val := range colors { //range always returns 2 values index and value as showm
+		fmt.Println(val)
+	}
 }
