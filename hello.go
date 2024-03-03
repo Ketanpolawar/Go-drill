@@ -705,6 +705,8 @@
 // Nested if else block
 package main
 
+import "fmt"
+
 // func main() {
 // 	var year int
 // 	println("enter the value for year:")
@@ -925,4 +927,15 @@ package main
 
 // }
 
+func main() {
+	num := 1
+	var a int
+	print("Enter the number")
+	fmt.Scanln(&a)
+	for num <= 10 {
+		product := 5 * num
+		fmt.Println(product)
+		num++
+	}
 
+}
