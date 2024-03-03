@@ -755,11 +755,6 @@ package main
 
 //**************************************************Switch Statements****************************************************
 
-import (
-	"fmt"
-	"strings"
-)
-
 // func main() {
 // 	M := time.Now()    //get system date/month/year
 // 	Month := M.Month() //corp the Month from the date returned
@@ -815,19 +810,49 @@ import (
 //		}
 //		println("ends the loop")
 //	}
-func main() {
-	var str string = "Hello World"
-	var substr string = "Wor"
-	if strings.Contains(str, substr) { //checks the contains of substr in str
-		fmt.Printf("String (%s) contains substring (%s)\n", str, substr)
-	} else {
-		fmt.Printf("String (%s) do not contain substring (%s)\n", str, substr)
-	}
-	println(strings.ToUpper(str)) //to upper
-	println(strings.ToLower(str)) //to lower
-	if (strings.Index(str, "W")) < 0 {
-		println("does not exists")
-	} else {
-		println("exists st the position", (strings.Index(str, "W")))
-	} //position of the "W" in str
-}
+// func main() {
+// 	var str string = "Hello World"
+// 	var substr string = "Wor"
+// 	if strings.Contains(str, substr) { //checks the contains of substr in str
+// 		fmt.Printf("String (%s) contains substring (%s)\n", str, substr)
+// 	} else {
+// 		fmt.Printf("String (%s) do not contain substring (%s)\n", str, substr)
+// 	}
+// 	println(strings.ToUpper(str)) //to upper
+// 	println(strings.ToLower(str)) //to lower
+// 	if (strings.Index(str, "W")) < 0 {
+// 		println("does not exists")
+// 	} else {
+// 		println("exists st the position", (strings.Index(str, "W")))
+// 	} //position of the "W" in str
+// }
+
+//*********************************03-03-2024************************************
+
+//style one : assigning function to a variable
+
+// func test(x int) {
+// 	println("Hello", x)
+// }
+// func main() {
+// 	x := test
+// 	x(5)
+// 	test(5)
+// }
+
+//style two : Anonnamous (must be defined inside a function only)
+
+// func main(){
+// 	test:=func(x int){
+// 		println(x)
+// 	}
+// 	test(5)
+// }
+
+// test:=func(x int){
+// 	println(x)
+// }
+// func main(){
+// 	 	test(5)
+// 	 }
+
