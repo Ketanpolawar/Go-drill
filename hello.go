@@ -705,6 +705,8 @@
 // Nested if else block
 package main
 
+import "fmt"
+
 // func main() {
 // 	var year int
 // 	println("enter the value for year:")
@@ -841,18 +843,27 @@ package main
 // }
 
 //style two : Anonnamous (must be defined inside a function only)
-
-// func main(){
-// 	test:=func(x int){
+//inferred variable or deeclaration cant be declared gobally
+// func main() {
+// 	test := func(x int) {
 // 		println(x)
 // 	}
 // 	test(5)
 // }
 
-// test:=func(x int){
+// var test = func(x int) { //inferred like this is possiable but ':=' do not work
 // 	println(x)
 // }
-// func main(){
-// 	 	test(5)
-// 	 }
 
+// func main() {
+// 	test(5)
+// }
+
+//style three : return type of anomnmous with diffent calling strategy
+
+func main() {
+	test := func(x int) int {
+		return x * x
+	}(5) //default argument
+	fmt.Println(test)
+}
