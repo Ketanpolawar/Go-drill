@@ -942,13 +942,34 @@ import "fmt"
 
 //slicce in GO langauge
 
-func main() {
-	colors := []string{"Red", "Blue", "Green"}
-	for index, val := range colors { //range always returns 2 values index and value as showm
-		fmt.Println(index, ":-", val)
-	}
+// func main() {
+// 	var colors = []string{"Red", "Blue", "Green"} //slice wthout the size
+// 	for index, val := range colors {              //range always returns 2 values index and value as showm
+// 		fmt.Println(index, ":-", val)
+// 	}
 
-	for _, val := range colors { //range always returns 2 values index and value as showm
-		fmt.Println(val)
-	}
-}
+// 	for _, val := range colors { //range always returns 2 values index and value as showm
+// 		fmt.Println(val)
+// 	}
+
+// 	fmt.Printf("%T", colors)
+
+// }
+
+// func main() {
+// 	var arrayOfinteger = [5]int{1, 2, 3, 4, 5} //array is specified with the size else it becomes the slicew
+// 	fmt.Println(arrayOfinteger)
+// 	fmt.Printf("%T", arrayOfinteger)
+// }
+
+// func main() {
+// 	weather := [3]string{"r", "t", "k"}
+// 	weather[0] = "y"
+// }
+
+//for dynamic array use [...] in size
+// func main() {
+// 	var arr = [...]string{"Ketan", "Polawar"}
+// 	fmt.Println(len(arr))
+
+// }
