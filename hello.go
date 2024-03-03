@@ -705,7 +705,9 @@
 // Nested if else block
 package main
 
-import "fmt"
+import (
+	"time"
+)
 
 // func main() {
 // 	var year int
@@ -868,5 +870,40 @@ import "fmt"
 // 	fmt.Println(test)
 // }
 
+// func calculate(x , y int) (int, int) {//last arg ka type mention kiya tho bhi it works
+// 	return x + y, x - y
+// }
+// func main() {
+// 	sum, difference := calculate(10, 20)
+// 	println("sum is ", sum, "differnce is ", difference)
+// }
 
+//******************Date and Time Function **************************
+// func main() {
+// 	Y, M, D := time.Now().Date()
+// 	println(D, "/", M, "/", Y)
+// 	println("Date is :", D)
+// 	println("Month is :", M)
+// 	println("Year is :", Y)
+//
 
+// func main() {
+// 	currentdatetime := time.Now()
+// 	day := currentdatetime.Day()
+// 	month := currentdatetime.Month()
+// 	year := currentdatetime.Year()
+// 	Hour := currentdatetime.Hour()
+// 	Min := currentdatetime.Minute()
+// 	Sec := currentdatetime.Second()
+
+// 	fmt.Printf("The report is printed on %d/%d/%d at %d:%d:%d", day, month, year, Hour, Min, Sec)
+
+// }
+
+// func main() {
+// 	println("HELLO!!")
+// 	time.Sleep(4* time.Second)
+// 	println("My Name is Ketan :)")
+// 	time.Sleep(4* time.Second)
+// 	println("I'am Budding Data Scientiest")
+// }
