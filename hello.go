@@ -705,10 +705,6 @@
 // Nested if else block
 package main
 
-import (
-	"time"
-)
-
 // func main() {
 // 	var year int
 // 	println("enter the value for year:")
@@ -907,3 +903,26 @@ import (
 // 	time.Sleep(4* time.Second)
 // 	println("I'am Budding Data Scientiest")
 // }
+
+// func main() {
+// 	num := 1
+// 	// for num <= 5 { //works as a while
+// 	// 	println(num)
+// 	// 	num++
+// 	// }
+
+// 	// for i:= 0; i < 7; i++ { //works as normal for i must be initalized
+// 	// 	println(i)
+// 	// }
+// 	for {
+// 		//code
+// 		println("this code runs default once ,then only after the condition is checked")
+// 		num++
+// 		if num > 5 {
+// 			break //condition (terninates the loop)
+// 		}
+// 	}
+
+// }
+
+
