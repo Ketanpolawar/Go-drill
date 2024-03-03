@@ -861,9 +861,12 @@ import "fmt"
 
 //style three : return type of anomnmous with diffent calling strategy
 
-func main() {
-	test := func(x int) int {
-		return x * x
-	}(5) //default argument
-	fmt.Println(test)
-}
+// func main() {
+// 	test := func(x int) int {
+// 		return x * x
+// 	}(5) //default argument
+// 	fmt.Println(test)
+// }
+
+
+
