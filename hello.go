@@ -705,6 +705,8 @@
 // Nested if else block
 package main
 
+import "fmt"
+
 // func main() {
 // 	var year int
 // 	println("enter the value for year:")
@@ -973,10 +975,6 @@ package main
 // }
 //*************************************06-03-24***********************************
 
-import (
-	"sort"
-)
-
 // func main() {
 // 	primeNumbers := []int{2, 3, 5, 7}
 // 	numbers := []int{1, 2, 3}
@@ -1030,4 +1028,21 @@ import (
 // 	print(status)
 // }
 
-
+func main() {
+	sm := map[string]float32{"Ketan": 10, "Ashlesha": 100, "Shukla": 100}
+	fmt.Println(sm["Ashlesha"])
+	sm["Ketan"] = 101
+	sm["Riya"] = 10
+	fmt.Print(sm)
+	delete(sm, "Riya")
+	fmt.Print("\n", sm)
+	for key, value := range sm {
+		fmt.Printf("\nthe marks obtained by %s is :%f", key, value)
+	}
+	for _, value := range sm {
+		fmt.Printf("\nthe marks obtained by x is :%f", value)
+	}
+	for key, _ := range sm {
+		fmt.Printf("\nthe marks obtained by %s is x", key)
+	}
+}
