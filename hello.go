@@ -971,3 +971,63 @@ package main
 // 	fmt.Println(len(arr))
 
 // }
+//*************************************06-03-24***********************************
+
+import (
+	"sort"
+)
+
+// func main() {
+// 	primeNumbers := []int{2, 3, 5, 7}
+// 	numbers := []int{1, 2, 3}
+// 	//first is the destination second is the source
+// 	copy(numbers, primeNumbers)
+// 	//copy(primeNumbers,numbers)
+// 	fmt.Println("primenumbers", primeNumbers)
+// 	println(cap(numbers), len(numbers))
+// 	println(cap(primeNumbers), len(primeNumbers))
+
+// }
+
+// func main(){
+// 	num:=[]int{2,4,6,8,10}
+// 	for i:=0;i<len(num);i++{
+// 		fmt.Println(num[i])
+// 	}
+// }
+
+// func main(){
+// 	arr:=[10]int{10,20,30,40,50,60,70,80,90,100}
+// 	intSlice:=arr[2:5]
+// 	fmt.Println("Slice intSlice")
+//     for index,ele := range intSlice{
+// 		fmt.Printf("index=%d,element=%d\n",index,ele)
+// 	}
+
+// }
+
+// func main() {
+// 	Slice := []int{20, 70, 30}
+// 	sort.Ints(Slice)
+// 	fmt.Println("Sorted Slice")
+// 	for i:=0;i<len(Slice);i++{
+// 		print(Slice[i]," ")
+// 	}
+// }
+
+// func main() {
+// 	slice := []string{"Ketan", "is", "Smart", "boy"}
+// 	sort.Strings(slice)
+// 	for i := 0; i < len(slice); i++ {
+// 		fmt.Print(slice[i], " ")
+// 	}
+// }
+
+// func main() {
+// 	var status bool = false
+// 	s1 := []int{10, 20, 30, 40}
+// 	status= sort.IntsAreSorted(s1)
+// 	print(status)
+// }
+
+
