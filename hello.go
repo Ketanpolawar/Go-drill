@@ -1065,25 +1065,47 @@ import "fmt"
 
 // }
 
-type Vertex struct {
-	lat, long float64
-}
+// type Vertex struct {
+// 	lat, long float64
+// }
 
-var m = map[string]Vertex{
-	"Bell Labs": Vertex{
-		40.90, -122.89,
-	},
-	"Google": Vertex{
-		37.80, 40.89,
-	},
-}
+// var m = map[string]Vertex{
+// 	"Bell Labs": Vertex{
+// 		40.90, -122.89,
+// 	},
+// 	"Google": Vertex{
+// 		37.80, 40.89,
+// 	},
+// }
+
+// func main() {
+// 	fmt.Println(m)
+
+// 	m["Nagpur"] = Vertex{
+// 		30.90, 89.89,
+// 	}
+// 	fmt.Println(m)
+
+// }
+
+//*****************************************
+
+//p is pointer to a  p=&a
+//print(&a,p) both prints address of a
+//print(a,*p,*(&a)) prints the value of a
+
+//*****************************************
 
 func main() {
-	fmt.Println(m)
+	var intData = 20
+	var intpointer *int
+	intpointer = &intData
 
-	m["Nagpur"] = Vertex{
-		30.90, 89.89,
-	}
-	fmt.Println(m)
+	fmt.Println("what is Int data", intData)
+	fmt.Println("what is address Int data", &intData)
+	fmt.Println("value of IntPointer", intpointer)
+
+	*intpointer = 30
+	fmt.Println("what is Int data", intData)
 
 }
