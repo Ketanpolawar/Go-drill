@@ -705,7 +705,11 @@
 // Nested if else block
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"io/ioutil"
+	"net/http"
+)
 
 // func main() {
 // 	var year int
@@ -1096,16 +1100,61 @@ import "fmt"
 
 //*****************************************
 
+// func main() {
+// 	var intData = 20
+// 	var intpointer *int
+// 	intpointer = &intData
+
+// 	fmt.Println("what is Int data", intData)
+// 	fmt.Println("what is address Int data", &intData)
+// 	fmt.Println("value of IntPointer", intpointer)
+
+// 	*intpointer = 30
+// 	fmt.Println("what is Int data", intData)
+
+// }
+
+// func swap(x *int, y *int) {
+// 	t := *x
+// 	*x = *y
+// 	*y = t
+// }
+
+// func main() {
+// 	a, b := 10, 20
+// 	fmt.Println(a, b)
+// 	swap(&a, &b)
+// 	fmt.Println(a, b)
+// }
+
+// func swap1(x int, y int) (int, int) {
+// 	return x, y
+// }
+
+// func main() {
+// 	a := 10
+// 	b := 20
+// 	a,b=swap1(a, b)
+// 	fmt.Println(a, b)
+
+// }
+//defer particular function k end mai jab statemaent run karna ho tab use karte hai
+
 func main() {
-	var intData = 20
-	var intpointer *int
-	intpointer = &intData
+	apiurl := "https://fakestoreapi.com/products/1"
 
-	fmt.Println("what is Int data", intData)
-	fmt.Println("what is address Int data", &intData)
-	fmt.Println("value of IntPointer", intpointer)
+	response, err := http.Get(apiurl)
+	if err != nil {
+		fmt.Printf("Error making GET request:%s\n", err)
+		return
+	}
+	defer response.Body.Close()
 
-	*intpointer = 30
-	fmt.Println("what is Int data", intData)
+	body, err := ioutil.ReadAll(response.Body)
+	if err := nil {
+		fmt.Printf("Error making GET request:%s\n", err)
+		return
+	}
 
+	fmt.Println((string(body)))
 }
