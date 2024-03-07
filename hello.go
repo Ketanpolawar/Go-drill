@@ -1028,21 +1028,24 @@ import "fmt"
 // 	print(status)
 // }
 
-func main() {
-	sm := map[string]float32{"Ketan": 10, "Ashlesha": 100, "Shukla": 100}
-	fmt.Println(sm["Ashlesha"])
-	sm["Ketan"] = 101
-	sm["Riya"] = 10
-	fmt.Print(sm)
-	delete(sm, "Riya")
-	fmt.Print("\n", sm)
-	for key, value := range sm {
-		fmt.Printf("\nthe marks obtained by %s is :%f", key, value)
-	}
-	for _, value := range sm {
-		fmt.Printf("\nthe marks obtained by x is :%f", value)
-	}
-	for key, _ := range sm {
-		fmt.Printf("\nthe marks obtained by %s is x", key)
-	}
-}
+// func main() {
+// 	sm := map[string]float32{"Ketan": 10, "Ashlesha": 100, "Shukla": 100}
+// 	fmt.Println(sm["Ashlesha"])
+// 	sm["Ketan"] = 101
+// 	sm["Riya"] = 10
+// 	fmt.Print(sm)
+// 	delete(sm, "Riya")
+// 	fmt.Print("\n", sm)
+// 	for key, value := range sm {
+// 		fmt.Printf("\nthe marks obtained by %s is :%f", key, value)
+// 	}
+// 	for _, value := range sm {
+// 		fmt.Printf("\nthe marks obtained by x is :%f", value)
+// 	}
+// 	for key, _ := range sm {
+// 		fmt.Printf("\nthe marks obtained by %s is x", key)
+// 	}
+// }
+
+
+//********************************************07-03-24***************************************
